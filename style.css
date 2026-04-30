@@ -1,0 +1,220 @@
+body{
+    background: #1d0101;
+}
+/* CABEÇALHO */
+ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 15px 20px;
+    margin: 0;
+    gap: 15px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background-color: #4F0E0E;
+    z-index: 1000;
+}
+
+/* Itens */
+li {
+    position: relative; /* importante pro dropdown */
+
+}
+
+
+/* LINKS */
+li a,
+.dropbtn {
+    display: block;
+    color: #ffffff;
+    padding: 10px 18px;
+    text-decoration: none;
+    text-align: center;
+    font-family:"Oxanium", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+/* Hover */
+li a:hover,
+.dropdown:hover .dropbtn {
+    background: #7E2929;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.tabela_musicas {
+    background-color: #7E2929;
+    border-collapse: collapse;
+    width: 900px;
+    height: 750px;
+    margin: 40px auto;
+    text-align: center;
+
+    margin-top: 240px;
+
+    font-family: "Oxanium", sans-serif;
+    color:  #f1aaa9;
+    font-size: 20px;
+
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Cabeçalho */
+.tabela_musicas th {
+    background-color: #4F0E0E;
+    padding: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Células */
+.tabela_musicas td {
+    border-bottom: 1px solid #4F0E0E;
+    padding: 10px;
+
+    font-family: "Oxanium", sans-serif;
+    color: #f1aaa9;
+}
+
+/* Hover */
+.tabela_musicas tr:hover {
+    background-color: #4F0E0E;
+    transition: 0.3s;
+}
+
+.tabela_musicas tr:nth-child(even) {
+    background-color: #6b2424;
+}
+
+/*Caixa de cadastro*/
+.cadbox {
+    width: 660px;
+    height: 600px;
+    background-color: #C3423F;
+    padding: 70px;
+    box-sizing: border-box;
+    border-radius: 15px;
+
+    margin: 120px auto; /* centraliza */
+}
+
+/*Botão de enviar*/
+.buttoncad2 {
+    font-family: "Oxanium", sans-serif;
+    justify-content: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: -1;
+    margin-top: 40px;
+
+    width: 100%;
+    height: 45px;
+    
+    text-align: center;
+    background-color: #f1aaa9;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    
+}
+
+/*Formulário*/
+.formcad {
+    margin-left: -51px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 110%;
+    height: 100%;
+    justify-content: center;
+}
+
+.formcad input {
+    padding: 15px;
+    border: 1px solid #411010;
+    border-radius: 15px;
+}
+
+.formcad input:focus {
+    border-color: #f1aaa9;
+    outline: none;
+}
+
+.formcad input::placeholder {
+    color: #9e9a9a;
+}
+section{
+    font-family: "Oxanium", "sans-serif";
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: #f1aaa9;
+}
+
+
+.modal-simples {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.7); 
+    z-index: 1000;
+}
+
+
+.modal-simples:target {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-conteudo {
+    background:  #4F0E0E;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #4F0E0E;
+    text-align: center;
+    color: #fff;
+    font-family: 'Oxanium', sans-serif;
+}
+
+.btn-cancelar {
+    display: inline-block;
+    padding: 8px 15px;
+    background: #555;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 4px;
+}
+
+.btn-confirmar {
+    display: inline-block;
+    padding: 8px 15px;
+    background: #ff4d4d;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 4px;
+}
+
+.btn-abrir {
+    display: inline-block;
+    padding: 8px 15px;
+    color: #f1aaa9;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 4px;
+}
+
+.btn-abrir:hover{
+ background-color: #C3423F;
+    transition: 0.3s;
+}

@@ -1,0 +1,23 @@
+select current_user;
+show databases;
+select database();
+use db_2td;
+
+
+CREATE table musica(
+id INT AUTO_INCREMENT PRIMARY KEY,
+titulo VARCHAR(100) NOT NULL,
+artista VARCHAR(100) NOT NULL, 
+album VARCHAR(100),
+genero VARCHAR (50)
+); 
+
+INSERT INTO musica(titulo, artista, album, genero) VALUES
+('All to well', 'Taylor Swift', 'RED', 'POP'),
+('Atummn Leaves', 'BTS', 'TMBMIL1', 'K-pop'),
+('Aliens', 'BTS', 'Arirang', 'K-pop'),
+('Better man', 'Taylor Swift', 'RED', 'POP'),
+('Best song ever', 'ONe direction', 'Midnight Memories', 'POP'),
+('Cigaro', 'System of a down', 'Mezmorize', 'Nu-metal')
+;
+
